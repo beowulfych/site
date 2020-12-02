@@ -1,0 +1,155 @@
+.section {
+    padding: 160px 0 50px 0;
+}
+
+.section__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section__img {
+    margin-bottom: 35px;
+}
+
+.section__title {
+    @include fonts (2.5rem, 400, "Archivo Black", $c2);
+}
+
+.featured__btn__block {
+    display: flex;
+    justify-content: center;
+}
+
+.btn__view {
+    text-align: center;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 12px 50px;
+
+    @include fonts (1.125rem, 500, "Roboto", $c1);
+
+    background-color: transparent;
+
+    border: 2px solid $c1;
+    border-radius: 50px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: #fff;
+        background-color: #E76F51;
+    }
+}
+
+.features {
+    margin-bottom: 50px;
+}
+
+.features__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured__item {
+    max-width: 25%;
+
+    background-color: #fff;
+
+    border-radius: 15px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.img__like {
+    position: absolute;
+    top: 20px; right: 20px;
+
+    font-size: 22px;
+    color: $c1;
+
+    background-color: #fff;
+
+    border-radius: 15px;
+
+    padding: 10px 10px 5px 10px;
+
+    text-align: center;
+}
+
+.featured__block__img {
+    position: relative;
+
+    margin-bottom: 50px;
+}
+
+
+.img__price {
+    position: absolute;
+    bottom: -30px;left: 50%;
+    transform: translateX(-50%);
+
+    @include fonts (1rem, 400, "Roboto", $c1);
+
+    background-color: #fff;
+
+    padding: 20px 40px;
+
+    border-radius: 25px 25px 0 0
+}
+
+.featured__title {
+
+    @include fonts (1.125rem, 400, "Archivo Black", $c2);
+
+    margin-bottom: 13px;
+}
+
+.featured__text {
+    @include fonts (1rem, 400, "Roboto", $c2);
+
+    margin-bottom: 30px;
+
+    line-height: 1.7;
+}
+
+.featured__btn {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 15px 40px;
+
+    @include fonts (1.125rem, 500, "Roboto", $c4);
+
+    background-color: rgba(55,55,55, .1);
+
+    border: none;
+    border-radius: 50px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: #656565;
+        background-color: rgba(55,55,55, .2);
+    }
+}

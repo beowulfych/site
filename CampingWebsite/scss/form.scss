@@ -1,0 +1,84 @@
+.form {
+    margin: 100px 0 250px 0;
+}
+
+.form__inner {
+    position: relative;
+    padding: 80px 0 70px 70px;
+}
+
+.form__bg {
+    position: absolute;
+    top: 0;left: 0;
+    z-index: -1;
+
+    border-radius: 10px;
+}
+
+.form__title {
+    @include fonts (2.5rem, 400, "Archivo Black", $c2);
+    margin-bottom: 5px;
+}
+
+.form__text {
+    @include fonts (1rem, 400, "Roboto", $c2);
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.input__block {
+    background-color: #fff;
+
+    min-height: 80px;
+    max-width: 620px;
+
+    padding: 0 20px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 20px;
+}
+
+.input {
+    @include fonts (1rem, 400, "Roboto", $c2);
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    min-height: 80px;
+    width: 100%;
+
+    &:placeholder-shown {
+        @include fonts (0.875rem, 400, "Roboto", $c4);
+    }
+}
+
+
+.btn-input {
+    padding: 8px 13px;
+
+    font-size: 30px;
+    color: #fff;;
+
+    background-color: $c1;
+
+    border-radius: 20px;
+    border: none;
+    outline: none;
+
+    box-shadow: 0 0 7px $c1;
+
+    translate: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        background-color: #BC5A42;
+        color: #C6C6C6;
+    }
+}
+
+
+

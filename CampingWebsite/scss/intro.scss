@@ -1,0 +1,91 @@
+.intro__bg {
+    position: absolute;
+    top: 0;left: 0;
+    z-index: -100;
+
+    border-radius: 0 0 200px 200px;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 200px 0;
+}
+
+.intro__title {
+    @include fonts (5.0625rem, 400, "Archivo Black", #fff);
+
+    margin-bottom: 35px;
+}
+
+.intro__text {
+    @include fonts (1.125rem, 400, "Roboto", #fff);
+    line-height: 1.6;
+
+    margin-bottom: 40px;
+}
+
+.intro__btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 55px;
+    margin-right: 20px;
+
+    @include fonts (1.125rem, 500, "Roboto", #fff);
+    
+    cursor: pointer;
+    background-color: $c1;
+    outline: none;
+    border-radius: 50px;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: #D2D2D2;
+        background-color:#BE5B42;
+    }
+}
+
+.intro__fearures {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro__fea__item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: #fff;
+
+    border-radius: 10px;
+
+    padding: 60px 20px;
+
+    min-height: 312px;
+    min-width: 337px;
+}
+
+.img__intro__fea {
+    margin-bottom: 20px;
+}
+
+.intro__fea__title {
+    @include fonts (1.125rem, 400, "Archivo Black", $c2);
+
+    margin-bottom: 10px;
+}
+
+.intro__fea__text {
+    @include fonts (1rem, 400, "Roboto", $c2);
+
+    line-height: 1.8;
+}

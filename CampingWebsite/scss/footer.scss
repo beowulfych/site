@@ -1,0 +1,76 @@
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 527px;
+
+    background: url(../img/footer/footer__bg.png) center no-repeat;
+    background-size: cover;
+}
+
+.arrow {
+    position: absolute;
+    right: 180px; top: -25px;
+
+    background-color: #fff;
+
+    font-size: 27px;
+    color: $c1;
+
+    padding: 18px 20px;
+
+    border-radius: 19px;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: #BE5B42;
+        background-color: #D2D2D2;
+    }
+}
+
+.footer__inner {
+    padding: 100px 0 70px 0;
+
+    display: flex;
+}
+
+.footer__title {
+    @include fonts (1.125rem, 400, "Archivo Black", $c2);
+
+    margin-bottom: 25px;
+}
+
+.footer__text {
+    @include fonts (1rem, 400, "Roboto", $c2);
+    line-height: 1.9;
+
+    margin-bottom: 40px;
+}
+
+.footer__btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.item__left {
+    display: flex;
+    justify-content: left;
+
+    margin-right: 200px;
+}
+
+.item__right {
+    display: flex;
+    justify-content: space-between;
+
+    .footer__item {
+        margin-right: 80px;
+    }
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+
+    @include fonts (1rem, 400, "Roboto", $c2);
+}

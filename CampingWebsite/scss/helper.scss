@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    position: relative;
+}
+
+.body__bg {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1000;
+}
+
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 200px
+}

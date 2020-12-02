@@ -1,0 +1,100 @@
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 0
+}
+
+.header__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    position: relative;
+
+    @include fonts (1.125rem, 400, "Roboto", $c4);
+    
+    text-decoration: none;
+
+    transition: color .1s linear;
+
+    margin-left: 40px;
+
+    &:first-child {
+        margin-left: 50px;
+    }
+
+    &:hover {
+        color: #fff;
+    }    
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 25px; left: 0;
+
+        width: 0;
+        height: 2px;
+
+        background-color: #fff;  
+
+        transition: width .3s linear;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 35px;
+    margin-right: 20px;
+
+    @include fonts (1.125rem, 500, "Roboto", #fff);
+    
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 50px;
+
+    &-up {
+        border: none;
+        position: relative;
+        padding: 0;
+        margin-right: 40px;
+    }
+
+    &-up:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 25px; left: 0;
+
+        width: 0;
+        height: 2px;
+
+        background-color: #fff;  
+
+        transition: width .3s linear;
+    }
+
+    &-up:hover:after {
+        width: 100%;
+    }
+    
+    &-in {
+        transition: background-color .2s linear, color .2s linear;
+    }
+
+    &-in:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
