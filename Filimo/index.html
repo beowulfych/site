@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FILIMO</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon/logo__sm.png" type="image/x-png">
+</head>
+<body>
+
+    <!-- SVG ICON -->
+
+    <svg style="display: none;">
+        <symbol id="search" viewBox="0 0 24 24">
+            <g>
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="star" viewBox="0 0 24 24">
+            <g>
+                <path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="star__half" viewBox="0 0 24 24">
+            <g>
+                <path d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="download" viewBox="0 0 24 24">
+            <g>
+                <path d="M0 0h24v24H0V0z" fill="none"/><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3zm-5.55-8h-2.9v3H8l4 4 4-4h-2.55z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="bookmark" viewBox="0 0 24 24">
+            <g>
+                <path d="M0 0h24v24H0z" fill="none"/><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="star__outline" viewBox="0 0 24 24">
+            <g>
+                <path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="arrow__left" viewBox="0 0 24 24">
+            <g>
+                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="arrow__up" viewBox="0 0 24 24">
+            <g>
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <header class="header">
+            <div class="header__inner">
+
+                <div class="header__logo">
+                    <div class="imgBox">
+                        <img src="img/header/logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <a href="#home" class="nav__link">Home</a>
+                    <a href="#" class="nav__link">Movie <span>&</span> Series</a>
+                    <a href="#" class="nav__link">Live</a>
+                    <a href="#" class="nav__link">Popular</a>
+                    <a href="#" class="nav__link">My List</a>
+                </nav>
+
+                <div class="header__home">
+                    <div class="header__search">
+                        <svg class="search--icon">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </div>
+                    <div class="header__user">
+                        <div class="imgBox">
+                            <img src="img/header/user.png" alt="user">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </header>
+
+    <div class="body__bg"></div>
+
+    <div class="intro" id="home">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="film__box">
+
+                    <div class="film__img">
+                        <div class="imgBox">
+                            <img src="img/intro/film.png" alt="film">
+                        </div>
+                    </div>
+
+                    <div class="film__content">
+
+                        <div class="film__title">Breaking Bad: S3 E6</div>
+
+                        <div class="film__class">Series</div>
+                        
+                        <div class="film__evaluation">
+                            <span>9.4</span>
+
+                            <div class="film__star">
+                                <div class="star">
+                                    <svg class="star--icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="star">
+                                    <svg class="star--icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="star">
+                                    <svg class="star--icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="star">
+                                    <svg class="star--icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="star">
+                                    <svg class="star__half--icon">
+                                        <use xlink:href="#star__half"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <a href="#" class="evalution__btn">‏9.5/10 IMDb</a>
+                        </div>
+
+                        <div class="film__time">43 Minutes - USA</div>
+
+                        <div class="genre">
+                            <div class="genre__item">Action</div>
+                            <div class="genre__item">Crime </div>
+                            <div class="genre__item">Drama</div>
+                            <div class="genre__item">Fantasi</div>
+                            <div class="genre__item">Thriller</div>
+                        </div>
+
+                        <div class="film__description">
+                            A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing <br>
+                            and selling methamphetamine in order to secure his family's future.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intro__line"></div>
+
+                <div class="menu__inner">
+
+                    <div class="menu__left">
+                        <a href="#" class="play__btn">
+                            Play <div></div>
+                        </a>
+                        
+                        <span>|</span>
+
+                        <a href="#" class="add__btn">
+                            Add to Wishlist
+                            <svg class="bookmark--icon">
+                                <use xlink:href="#bookmark"></use>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="download__btn">
+                            Download
+                            <svg class="download--icon">
+                                <use xlink:href="#download"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="menu__right">
+                        <a href="#" class="rate__btn">
+                            <div class="star__title">Your rate</div>
+                            <div class="p-rating">
+                                <button class="p-rating-star">☆</button>
+                                <button class="p-rating-star">☆</button>
+                                <button class="p-rating-star">☆</button>
+                                <button class="p-rating-star">☆</button>
+                                <button class="p-rating-star">★</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <span class="section__line"></span>
+            <h1 class="section__title">
+                About
+            </h1>
+            <span class="section__line"></span>
+        </div>
+    </section>
+
+    <div class="about">
+        <div class="container">
+            <div class="about__inner">
+
+                <div class="boxImg">
+                    <img class="about__img" src="img/section/about.png" alt="about">
+                </div>
+
+                <div class="about__content">
+                    <div class="about__item">
+                        <div class="about__title">Summery:</div>
+                        <div class="about__text">A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</div>
+                    </div>
+
+                    <div class="about__item">
+                        <div class="about__title creator__title">Creator:</div>
+                        <div class="about__text">Vince Gilligan</div>
+                    </div>
+
+                    <div class="about__item">
+                        <div class="about__title casts__title">Casts:</div>
+                        <div class="about__text">
+                            Bryan Cranston ,  Anna Gunn ,  Aaron Paul ,  Dean Norris ,  Betsy Brandt 
+                            Bob Odenkirk ,  Giancarlo Esposito , Jonathan Banks ,  Laura Fraser , JessePlemons
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__inner">
+
+                <div class="section__content">
+                    <span class="section__line"></span>
+                    <h1 class="section__title">
+                        Episodes
+                    </h1>
+                    <span class="section__line"></span>
+                </div>
+
+                <div class="section__arrow">
+
+                    <div class="arrow__left">
+                        <svg class="arrow__left--icon">
+                            <use xlink:href="#arrow__left"></use>
+                        </svg>
+                    </div>
+
+                    <div class="arrow__right">
+                        <svg class="arrow__right--icon">
+                            <use xlink:href="#arrow__left"></use>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="episodes">
+        <div class="container">
+            <div class="episoses__inner">
+
+                <div class="episode__left">
+                    <div class="episodes__seasons">
+                        <div class="season__numper">1</div>
+                    </div>
+                    <div class="season__text">Seasons</div>
+                </div>
+                
+                <div class="episode__right">
+
+                    <div class="episode__poster">
+                        <img src="img/episodes/season_1_poster.png" alt="episod_1">
+                        <div class="episode__number">Episode 1</div>
+                    </div>
+                        
+                    <div class="episode__poster">
+                        <img src="img/episodes/season_2_poster.png" alt="episod_2">
+                        <div class="episode__number">Episode 2</div>
+                    </div>
+    
+                    <div class="episode__poster">
+                        <img src="img/episodes/season_3_poster.png" alt="episod_3">
+                        <div class="episode__number">Episode 3</div>
+                    </div>
+    
+                    <div class="episode__poster">
+                        <img src="img/episodes/season_4_poster.png" alt="episod_4">
+                        <div class="episode__number">Episode 4</div>
+                    </div>
+    
+                    <div class="episode__poster">
+                        <img src="img/episodes/season_5_poster.png" alt="episod_5">
+                        <div class="episode__number">Episode 5</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__inner">
+
+                <div class="section__content">
+                    <span class="section__line"></span>
+                    <h1 class="section__title">
+                        More Like This 
+                    </h1>
+                    <span class="section__line"></span>
+                </div>
+
+                <div class="section__arrow">
+
+                    <div class="arrow__left">
+                        <svg class="arrow__left--icon">
+                            <use xlink:href="#arrow__left"></use>
+                        </svg>
+                    </div>
+
+                    <div class="arrow__right">
+                        <svg class="arrow__right--icon">
+                            <use xlink:href="#arrow__left"></use>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="movies">
+        <div class="container">
+            <div class="movies__inner">
+
+                <div class="movies__item">
+                    <img src="img/movies/movies_1.png" alt="movie_1">
+                    <div class="movie__title">El Camino</div>
+                    <div class="movie__theme">TV-MA |  Action, Crime</div>
+                </div>
+
+                <div class="movies__item">
+                    <img src="img/movies/movies_2.png" alt="movie_2">
+                    <div class="movie__title">Better Call Saul</div>
+                    <div class="movie__theme">TV-MA |  Crime, Drama </div>
+                </div>
+
+                <div class="movies__item">
+                    <img src="img/movies/movies_3.png" alt="movie_3">
+                    <div class="movie__title">The Parts You Lose</div>
+                    <div class="movie__theme">Movie | Drama, Thriller </div>
+                </div>
+
+                <div class="movies__item">
+                    <img src="img/movies/movies_4.png" alt="movie_4">
+                    <div class="movie__title">Need For Speed</div>
+                    <div class="movie__theme">Movie |  Action, Crime</div>
+                </div>
+
+                <div class="movies__item">
+                    <img src="img/movies/movies_5.png" alt="movie_5">
+                    <div class="movie__title">Last Christmas</div>
+                    <div class="movie__theme">Movie | Comedy, Drama</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <span class="section__line"></span>
+            <h1 class="section__title">
+                Comments
+            </h1>
+            <span class="section__line"></span>
+        </div>
+    </section>
+
+    <div class="comments">
+        <div class="container">
+            <div class="comments__inner">
+
+                <form action="#" method="GET" class="comments__left">
+                    <div class="textarea__block">
+                        <textarea class="comment__textarea" maxlength="40"
+                        placeholder="Write your review here..."></textarea>
+                        <div class="comments__smile">
+                            
+                            <div class="smile__item">
+                                <img src="img/smile/smile_1.png" alt="smile_1">
+                            </div>
+
+                            <div class="smile__item">
+                                <img src="img/smile/smile_2.png" alt="smile_2">
+                            </div>
+
+                            <div class="smile__item">
+                                <img src="img/smile/smile_3.png" alt="smile_3">
+                            </div>
+
+                            <div class="smile__item">
+                                <img src="img/smile/smile_4.png" alt="smile_4">
+                            </div>
+
+                            <div class="smile__item">
+                                <img src="img/smile/smile_5.png" alt="smile_5">
+                            </div>
+
+                            <div class="smile__item">
+                                <img src="img/smile/smile_6.png" alt="smile_6">
+                            </div>
+
+                            <div class="smile__item">
+                                <img src="img/smile/smile_7.png" alt="smile_7">
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="comments__btn">Submit</button>
+                </form>
+
+                <form action="#" method="GET" class="comments__right">
+
+                    <div class="comment__block">
+
+                        <img class="user__icon" src="img/user/user_1.png" alt="user_1">
+                        <div class="user__content">
+                            <div class="username">bruhperson</div>
+                            <div class="user__comment">Re-Watched it 7 times and counting. I guess I liked it.</div>
+                        </div>
+                        <div class="user__evalution">
+                            <div class="user__partition"></div>
+                            <div class="rating">10/10</div>
+                            <div class="rating__time">12 Oct 2019</div>
+                        </div>
+
+                    </div>
+
+                    <div class="comment__block">
+
+                        <img class="user__icon" src="img/user/user_2.png" alt="user_2">
+                        <div class="user__content">
+                            <div class="username">manishsingh</div>
+                            <div class="user__comment">When you finish the show you'll never be the same..I guarantee you</div>
+                        </div>
+                        <div class="user__evalution">
+                            <div class="user__partition"></div>
+                            <div class="rating">10/10</div>
+                            <div class="rating__time">02 Oct 2019</div>
+                        </div>
+
+                    </div>
+
+                    <div class="comment__block">
+
+                        <img class="user__icon" src="img/user/user_3.png" alt="user_3">
+                        <div class="user__content">
+                            <div class="username">otnememento</div>
+                            <div class="user__comment">The best series I have seen in my whole life, even better than the wire.</div>
+                        </div>
+                        <div class="user__evalution">
+                            <div class="user__partition"></div>
+                            <div class="rating">10/10</div>
+                            <div class="rating__time">21 Aug 2019</div>
+                        </div>
+
+                    </div>
+
+                    <div class="comment__block">
+
+                        <img class="user__icon" src="img/user/user_4.png" alt="user_5">
+                        <div class="user__content">
+                            <div class="username">xpinerhd</div>
+                            <div class="user__comment">I wanna delete my brain and watch it again like I never knew it.</div>
+                        </div>
+                        <div class="user__evalution">
+                            <div class="user__partition"></div>
+                            <div class="rating">10/10</div>
+                            <div class="rating__time">17 Mar 2019</div>
+                        </div>
+
+                    </div>
+
+                    <div class="comment__block">
+
+                        <img class="user__icon" src="img/user/user_5.png" alt="user_5">
+                        <div class="user__content">
+                            <div class="username">danulis</div>
+                            <div class="user__comment">The most perfect show ever created. There will no other show like this.</div>
+                        </div>
+                        <div class="user__evalution">
+                            <div class="user__partition"></div>
+                            <div class="rating">10/10</div>
+                            <div class="rating__time">19 Jan 2019</div>
+                        </div>
+
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <a href="#home" class="arrow__up__block">
+
+            <svg class="arrow__up">
+                <use xlink:href="#arrow__up"></use>
+            </svg>
+
+        </a>
+
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+
+                    <div class="footer__item">
+                        <div class="footer__link">Home</div>
+                        <div class="footer__link">Contact us</div>
+                        <div class="footer__link">Terms of service</div>
+                        <div class="footer__link">About us</div>
+                    </div>
+
+                    <div class="footer__item">
+                        <div class="footer__link">Live</div>
+                        <div class="footer__link">FAQ</div>
+                        <div class="footer__link">Premium</div>
+                        <div class="footer__link">Privacy Policy</div>
+                    </div>
+
+                    <div class="footer__item">
+                        <div class="footer__link">Popular</div>
+                        <div class="footer__link">250 IMDB</div>
+                        <div class="footer__link">Recently Released</div>
+                        <div class="footer__link">Advertise with us</div>
+                    </div>
+
+                </div>
+                <div class="footer__right">
+                    <img class="footer__logo" src="img/header/logo.png" alt="logo">
+                    <div class="footer__text">
+                        Filimo is the world’s leading<br>
+                        community for creators to share,<br>
+                        grow, and get hired.
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="social__item">
+                            <img src="img/social/instagram.png" alt="instagram">
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="img/social/apparat.png" alt="apparat">
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="img/social/telegram.png" alt="telegram">
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="img/social/mess.png" alt="mess">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>&copy;</span>2020 Filimo. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+
+    <script type="text/javascript">
+
+        window.addEventListener('scroll', function() 
+        {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+
+    </script>
+
+</body>
+</html>
