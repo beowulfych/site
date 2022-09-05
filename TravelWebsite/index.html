@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Travel Website</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/949ab18b43.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <svg style="display:none;">
+            <symbol id="search" viewBox="0 0 24 24">
+                <g>
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </g>
+            </symbol>
+        </svg>
+
+        <!-- <div class="wrapper"> -->
+
+            <header id="home" class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <img class="header__logo__img" src="img/h_logo.png" alt="logo">
+                            <div class="header__logo__title">Travelo</div>
+                        </div>
+        
+                        <nav class="nav">
+                            <a href="#home" class="nav__link">Home</a>
+                            <a href="#about" class="nav__link">About</a>
+                            <a href="#place" class="nav__link">Place</a>
+                            <a href="#blog" class="nav__link">Blog</a>
+                            <a href="#reviews" class="nav__link">Reviews</a>
+                        </nav>
+        
+                        <button class="header__btn">Connect</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="intro">
+                <div class="container">
+                    <div class="intro__inner">
+                        <div class="intro__title">Travel To explore</div>
+                        <div class="intro__text">
+                            Lorem Ipsum Dolor Sit Amet, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ultricies Mi Eget Mauris
+                        </div>
+                        <form method="POST" action="#" class="search__bar">
+                            <div class="first_seach">
+                                <div class="seach_title">Where You Want to go</div>
+                                <input maxlength="25" required style="font-family:'FontAwesome' !important" type="text" placeholder="&#xf002 Search your Location">
+                            </div>
+
+                            <div class="second_seach">
+                                <div class="seach_title">Check-in</div>
+                                <input required type="date" value="dd-mm-yy" placeholder="Add Date">
+                            </div>
+
+                            <div class="third_seach">
+                                <div class="seach_title">Check-out</div>
+                                <input required type="date" placeholder="Add Date">
+                            </div>
+
+                            <button class="btn_seach">
+                                Explore Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" class="futures">
+                <div class="container">
+                    <div class="futures_inner">
+
+                        <div class="futures_item">
+                            <div class="futures_img">
+                                <img src="img/futures_1.png" alt="">
+                            </div>
+                            <div class="futures_title">
+                                Get Best Prices 
+                            </div>
+                            <div class="futures_text">
+                                Pay through our application and save thousands and get amazing rewards 
+                            </div>
+                        </div>
+
+                        <div class="futures_item">
+                            <div class="futures_img">
+                                <img src="img/futures_2.png" alt="">
+                            </div>
+                            <div class="futures_title">
+                                Covid Safe
+                            </div>
+                            <div class="futures_text">
+                                We have all the curated hotels that 
+                                have all the precaution for a corvid 
+                                safe environment
+                            </div>
+                        </div>
+
+                        <div class="futures_item">
+                            <div class="futures_img">
+                                <img src="img/futures_3.png" alt="">
+                            </div>
+                            <div class="futures_title">
+                                Flexible Payment
+                            </div>
+                            <div class="futures_text">
+                                Enjoy the flexible payment through our 
+                                app and get rewards on every payment 
+                            </div>
+                        </div>
+
+                        <div class="futures_item">
+                            <div class="futures_img">
+                                <img src="img/futures_4.png" alt="">
+                            </div>
+                            <div class="futures_title">
+                                Find The Best Near You
+                            </div>
+                            <div class="futures_text">
+                                Find the best hotels and places to visit 
+                                near you in a single click 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="place" class="recommended">
+                <div class="container">
+                    <div class="recommended_inner">
+                        <section class="section">
+                            Recommended Destination
+                        </section>
+                        <ul class="recommended_list">
+                            <li class="list_item">The Weekend Break</li>
+                            <li class="list_item">The Package Holiday</li>
+                            <li class="list_item">The Group Tour</li>
+                            <li class="list_item">Long Term Slow Travel</li>
+                        </ul>
+
+                        <div class="recommended_block">
+
+                            <div class="recommended_item">
+                                <div class="recommended_img">
+                                    <img src="img/recommended_1.png" alt="">
+                                </div>
+                                
+                                <div class="recommended_content">
+                                    <div class="recommended_name">Singapore</div>
+                                    <div class="recommended_description">Singapore, officially the Republic of Singapore, is a ..</div>
+                                    <div class="recommended_first">
+
+                                        <div class="recommended_icons">
+                                            <img src="img/recommended_icon_1.png">
+                                            <img src="img/recommended_icon_2.png">
+                                            <img src="img/recommended_icon_3.png">
+                                        </div>
+                                        <div class="recommended_price">₹ 38,800</div>
+
+                                    </div>
+
+                                    <div class="recommended_second">
+                                        <div class="recommended_distance">1000 Kms</div>
+                                        <div class="recommended_race">Approx 2 night trip</div>
+                                    </div>
+                                    
+                                </div>
+                            </div> <!-- recommended_item_1 -->
+
+                            <div class="recommended_item">
+                                <div class="recommended_img">
+                                    <img src="img/recommended_2.png" alt="">
+                                </div>
+                                
+                                <div class="recommended_content">
+                                    <div class="recommended_name">Thailand</div>
+                                    <div class="recommended_description">Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces.</div>
+                                    <div class="recommended_first">
+
+                                        <div class="recommended_icons">
+                                            <img src="img/recommended_icon_1.png">
+                                            <img src="img/recommended_icon_2.png">
+                                            <img src="img/recommended_icon_3.png">
+                                        </div>
+                                        <div class="recommended_price">₹ 38,800</div>
+
+                                    </div>
+
+                                    <div class="recommended_second">
+                                        <div class="recommended_distance">1000 Kms</div>
+                                        <div class="recommended_race">Approx 2 night trip</div>
+                                    </div>
+                                    
+                                </div>
+                            </div> <!-- recommended_item_2 -->
+
+                            <div class="recommended_item">
+                                <div class="recommended_img">
+                                    <img src="img/recommended_3.png" alt="">
+                                </div>
+                                
+                                <div class="recommended_content">
+                                    <div class="recommended_name">Paris</div>
+                                    <div class="recommended_description">Paris, France's capital, is a major European city and a</div>
+                                    <div class="recommended_first">
+
+                                        <div class="recommended_icons">
+                                            <img src="img/recommended_icon_1.png">
+                                            <img src="img/recommended_icon_2.png">
+                                            <img src="img/recommended_icon_3.png">
+                                        </div>
+                                        <div class="recommended_price">₹ 38,800</div>
+
+                                    </div>
+
+                                    <div class="recommended_second">
+                                        <div class="recommended_distance">1000 Kms</div>
+                                        <div class="recommended_race">Approx 2 night trip</div>
+                                    </div>
+                                    
+                                </div>
+                            </div> <!-- recommended_item_3 -->
+
+                            <div class="recommended_item">
+                                <div class="recommended_img">
+                                    <img src="img/recommended_4.png" alt="">
+                                </div>
+                                
+                                <div class="recommended_content">
+                                    <div class="recommended_name">New Zealand</div>
+                                    <div class="recommended_description">New Zealand is an island country in the </div>
+                                    <div class="recommended_first">
+
+                                        <div class="recommended_icons">
+                                            <img src="img/recommended_icon_1.png">
+                                            <img src="img/recommended_icon_2.png">
+                                            <img src="img/recommended_icon_3.png">
+                                        </div>
+                                        <div class="recommended_price">₹ 38,800</div>
+
+                                    </div>
+
+                                    <div class="recommended_second">
+                                        <div class="recommended_distance">1000 Kms</div>
+                                        <div class="recommended_race">Approx 1 night trip</div>
+                                    </div>
+                                    
+                                </div>
+                            </div> <!-- recommended_item_4 -->
+
+                            <div class="recommended_item">
+                                <div class="recommended_img">
+                                    <img src="img/recommended_5.png" alt="">
+                                </div>
+                                
+                                <div class="recommended_content">
+                                    <div class="recommended_name">Bora Bora</div>
+                                    <div class="recommended_description">Bora Bora is a small South Pacific island northwest of Tahiti in French Polynesia. Surrounded by sand</div>
+                                    <div class="recommended_first">
+
+                                        <div class="recommended_icons">
+                                            <img src="img/recommended_icon_1.png">
+                                            <img src="img/recommended_icon_2.png">
+                                            <img src="img/recommended_icon_3.png">
+                                        </div>
+                                        <div class="recommended_price">₹ 38,800</div>
+
+                                    </div>
+
+                                    <div class="recommended_second">
+                                        <div class="recommended_distance">1000 Kms</div>
+                                        <div class="recommended_race">Approx 2 night 2 day trip</div>
+                                    </div>
+                                    
+                                </div>
+                            </div> <!-- recommended_item_5 -->
+                                        
+                            <div class="recommended_item">
+                                <div class="recommended_img">
+                                    <img src="img/recommended_6.png" alt="">
+                                </div>
+                                
+                                <div class="recommended_content">
+                                    <div class="recommended_name">London</div>
+                                    <div class="recommended_description">London, the capital of England and the United Kingdom</div>
+                                    <div class="recommended_first">
+
+                                        <div class="recommended_icons">
+                                            <img src="img/recommended_icon_1.png">
+                                            <img src="img/recommended_icon_2.png">
+                                            <img src="img/recommended_icon_3.png">
+                                        </div>
+                                        <div class="recommended_price">₹ 38,800</div>
+
+                                    </div>
+
+                                    <div class="recommended_second">
+                                        <div class="recommended_distance">1000 Kms</div>
+                                        <div class="recommended_race">Approx 3 night 2 day trip</div>
+                                    </div>
+                                    
+                                </div>
+                            </div> <!-- recommended_item_6 -->
+                        
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blog" class="blogs">
+                <div class="container">
+                    <div class="blogs_inner">
+                        <section class="section">
+                            Blogs
+                        </section>
+
+                        <div class="blogs_block">
+                            <div class="blogs_item blogs_1">
+                                <img src="img/blog_3.png" alt="">
+                                <div class="blogs_title">
+                                    The Ultimate Guide 
+                                    to Climbing 
+                                    Mount Kilimanjaro
+                                </div>
+                            </div>
+
+                            
+                            <div class="blog">
+                                <div class="blogs_item blogs_2">
+                                    <img src="img/blog_2.png" alt="">
+                                    <div class="blogs_title">
+                                        12 Things I’d Tell Any 
+                                        New Traveler
+                                    </div>
+                                </div>
+                                <div class="blogs_item blogs_3">
+                                    <img src="img/blog_1.png" alt="">
+                                    <div class="blogs_title">
+                                        The Ultimate Packing List for 
+                                        Female Travelers
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="reviews" class="reviews">
+                <div class="container">
+                    <div class="reviews_inner">
+                        <section class="section">
+                            Happy Customers
+                        </section>
+                        
+                        <div class="reviews_block">
+                            <div class="reviews_item">
+
+                                <div class="blockquote">
+                                    <div class="reviewes_img">
+                                        <img src="img/quote.png" alt="">
+                                    </div>
+                                    <div class="reviewes_text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget felis eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed. Viverra ipsum nunc aliquet bibendum enim.
+                                    </div>
+                                </div>
+                                <div class="reviewes_user">
+                                    <div class="user_img">
+                                        <img src="img/user.png" alt="">
+                                    </div>
+                                    <div class="user_info">
+                                        <div class="user_name">Shalini Singh</div>
+                                        <div class="user_state">Project Manger flyhigh</div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="reviews_item">
+    
+                                <div class="blockquote">
+                                    <div class="reviewes_img">
+                                        <img src="img/quote.png" alt="">
+                                    </div>
+                                    <div class="reviewes_text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget felis eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed. Viverra ipsum nunc aliquet bibendum enim.
+                                    </div>
+                                </div>
+                                <div class="reviewes_user">
+                                    <div class="user_img">
+                                        <img src="img/user.png" alt="">
+                                    </div>
+                                    <div class="user_info">
+                                        <div class="user_name">Shalini Singh</div>
+                                        <div class="user_state">Project Manger flyhigh</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="containter">
+                    <div class="footer_inner">
+                        <div class="footer_copy">
+                            Copyright &copy; 2022 Travelo. All rights reserved
+                        </div>
+                        <nav class="nav">
+                            <a href="#home" class="nav__link">Home</a>
+                            <a href="#about" class="nav__link">About</a>
+                            <a href="#place" class="nav__link">Place</a>
+                            <a href="#blog" class="nav__link">Blog</a>
+                            <a href="#reviews" class="nav__link">Reviews</a>
+                        </nav>
+                        <div class="footer_social">
+                            
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        <!-- </div> ./wrapper -->
+    </body>
+</html>
+<!-- FONTS: Poppins, Roboto, Montserrat, Raleway, Jost (300.400.500.600.700) -->
